@@ -3,6 +3,7 @@ package LFP;
 import java.util.Scanner;
 
 public class StringComparison {
+    static int var;
     public static void main(String[] args) {
         //sumOfCommandLineArguments(args);
         name(args[0]);
@@ -56,5 +57,12 @@ public class StringComparison {
     }
     static void name(String arg){
         System.out.println(arg);
+    }
+    static void sampleMethod(){
+        //all the methods in this class are static
+        // and var 'variable' is static
+        {
+            System.out.println("static block");
+        }
     }
 }
