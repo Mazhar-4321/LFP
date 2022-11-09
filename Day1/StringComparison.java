@@ -1,4 +1,4 @@
-package LFP;
+package LFP.Day1;
 
 import java.util.Scanner;
 
