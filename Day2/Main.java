@@ -21,4 +21,12 @@ public class Main {
         }
         System.out.println(s);
     }
+    static void sumOfNaturalNumbers(int n){
+        int sum=0;
+        while(n>0){
+            sum+=n;
+            n--;
+        }
+        System.out.println(sum);
+    }
 }
