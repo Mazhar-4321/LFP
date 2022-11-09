@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class StringComparison {
     public static void main(String[] args) {
-        sumOfCommandLineArguments(args);
+        //sumOfCommandLineArguments(args);
+        name(args[0]);
         Scanner sc = new Scanner(System.in);
         String s1=sc.next();
         String s2=sc.next();
@@ -52,5 +53,8 @@ public class StringComparison {
             return true;
         }else
             return false;
+    }
+    static void name(String arg){
+        System.out.println(arg);
     }
 }
