@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class StringComparison {
     public static void main(String[] args) {
+        sumOfCommandLineArguments(args);
         Scanner sc = new Scanner(System.in);
         String s1=sc.next();
         String s2=sc.next();
@@ -12,5 +13,44 @@ public class StringComparison {
         }else{
             System.out.println("Not Equal");
         }
+
+    }
+    static void sumOfCommandLineArguments(String[] args){
+        int invalidIntegers=0;
+        int sum=0;
+        for(String s : args){
+            if(validInteger(s)){
+                sum+=Integer.parseInt(s);
+            }else{
+                invalidIntegers++;
+            }
+        }
+        System.out.println("count="+sum);
+        System.out.println("Invalid Integers Count="+invalidIntegers);
+    }
+    static boolean validInteger(String s){
+        int count=0;
+        for(char x : s.toCharArray()){
+            switch(x){
+                case '0':break;
+                case '1':break;
+                case '2':break;
+                case '3':break;
+                case '4':break;
+                case '5':break;
+                case '6':break;
+                case '7':break;
+                case '8':break;
+                case '9':break;
+                default:count++;
+            }
+        }
+        if(count==0){
+            return true;
+        }
+        if((count==1)&&(s.charAt(0)=='+'||s.charAt(0)=='-')){
+            return true;
+        }else
+            return false;
     }
 }
