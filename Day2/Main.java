@@ -37,4 +37,12 @@ public class Main {
         }
         System.out.println(rev);;
     }
+    static void sumOfNaturalNumbersUsingForLoop(int n){
+        int sum=0;
+        for(;n>0;n--){
+            sum+=n;
+            
+        }
+        System.out.println(sum);
+    }
 }
