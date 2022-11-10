@@ -17,6 +17,12 @@ public class Main {
       quadratic.setB(2);
       quadratic.setC(3);
       quadratic.rootsOfQuadraticEquation();
+      if(StringComparison.validInteger(args[0])&&StringComparison.validInteger(args[1])){
+          Distance d = new Distance();
+          d.setX(Integer.parseInt(args[0]));
+          d.setY(Integer.parseInt(args[1]));
+          System.out.println(d.distance());
+      }
     }
     static void numberInWords(int n){
         String s="";
