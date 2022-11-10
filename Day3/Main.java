@@ -9,6 +9,7 @@ public class Main {
         elementsOfArrayInReverseOrder(arr);
         elementsAtOddPosition(arr);
         duplicateElementsOfArray(arr);
+        sortElementsOfArray(arr);;
     }
     static void elementsOfArray(int[] arr){
         for(int x:arr){
@@ -85,6 +86,22 @@ public class Main {
             if(flag){
                 System.out.print(arr[i]+" ");
             }
+        }
+    }
+    static void sortElementsOfArray(int[] arr){
+        for(int i=0;i<arr.length;i++){
+            int minP=i,minValue=arr[i];
+            for(int j=i+1;j< arr.length;j++){
+                if(arr[j]<minValue){
+                    minP=j;
+                }
+            }
+            int temp=arr[i];
+            arr[i]=arr[minP];
+            arr[minP]=temp;
+        }
+        for(int x: arr){
+            System.out.print(x+" ");
         }
     }
 }
