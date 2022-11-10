@@ -6,11 +6,16 @@ public class Main {
         largestElementOfArray(arr);
         smallestElementOfArray(arr);
         elementsAtEvenPosition(arr);
+        elementsOfArrayInReverseOrder(arr);
     }
     static void elementsOfArray(int[] arr){
         for(int x:arr){
             System.out.println(x+" ");
         }
+    }
+    static void elementsOfArrayInReverseOrder(int[] arr){
+        for(int i=arr.length-1;i>=0;i--)
+            System.out.println(arr[i]);
     }
     static void frequencyOfElements(int[] arr){
         for(int i=0;i<arr.length;i++){
