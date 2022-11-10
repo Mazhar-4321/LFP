@@ -92,5 +92,28 @@ public class Main {
             default:return "Invalid Number";
         }
     }
-
+     static void operatorProgram(int a,int b, int c){
+        int operation1=a+b*c;
+        int operation2=c+a/b;
+         int operation3=a%b+c;
+         int operation4=a*b+c;
+         if(a>=b&&a>=c){
+             System.out.println(a);
+         }else{
+             if(b>=c){
+                 System.out.println(b);
+             }else{
+                 System.out.println(c);
+             }
+         }
+         if(a<=b&&a<=c){
+             System.out.println(a);
+         }else{
+             if(b<=c){
+                 System.out.println(b);
+             }else{
+                 System.out.println(c);
+             }
+         }
+     }
 }
