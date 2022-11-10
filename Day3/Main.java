@@ -7,6 +7,7 @@ public class Main {
         smallestElementOfArray(arr);
         elementsAtEvenPosition(arr);
         elementsOfArrayInReverseOrder(arr);
+        elementsAtOddPosition(arr);
     }
     static void elementsOfArray(int[] arr){
         for(int x:arr){
@@ -56,6 +57,16 @@ public class Main {
                System.out.println(x);
            }
            c++;
+        }
+
+    }
+    static void elementsAtOddPosition(int[] arr){
+        int c=0;
+        for(int x: arr){
+            if(c%2==1){
+                System.out.println(x);
+            }
+            c++;
         }
 
     }
