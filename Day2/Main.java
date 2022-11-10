@@ -12,6 +12,11 @@ public class Main {
           springSeason.setM(Integer.parseInt(args[1]));
           System.out.println( springSeason.dayOfMonthBetweenMarch20AndJune20());
       }
+      Quadratic quadratic= new Quadratic();
+      quadratic.setA(1);
+      quadratic.setB(2);
+      quadratic.setC(3);
+      quadratic.rootsOfQuadraticEquation();
     }
     static void numberInWords(int n){
         String s="";
@@ -125,4 +130,5 @@ public class Main {
              }
          }
      }
+
 }
