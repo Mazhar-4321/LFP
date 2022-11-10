@@ -5,6 +5,7 @@ public class Main {
         int[] arr={1,2,3,4,5,6};
         largestElementOfArray(arr);
         smallestElementOfArray(arr);
+        elementsAtEvenPosition(arr);
     }
     static void elementsOfArray(int[] arr){
         for(int x:arr){
@@ -42,5 +43,15 @@ public class Main {
             }
         }
         System.out.println("min="+min);
+    }
+    static void elementsAtEvenPosition(int[] arr){
+        int c=0;
+        for(int x: arr){
+           if(c%2==0){
+               System.out.println(x);
+           }
+           c++;
+        }
+
     }
 }
