@@ -3,6 +3,7 @@ package LFP.Day3;
 public class Main {
     public static void main(String[] args) {
         int[] arr={1,2,3,4,5,6};
+        largestElementOfArray(arr);
     }
     static void elementsOfArray(int[] arr){
         for(int x:arr){
@@ -22,5 +23,14 @@ public class Main {
             }
             System.out.println(arr[i]+"=>"+c);
         }
+    }
+    static void largestElementOfArray(int[] arr){
+        int max=arr[0];
+                for(int x: arr){
+                    if(x>max){
+                        max=x;
+                    }
+                }
+        System.out.println("max="+max);
     }
 }
