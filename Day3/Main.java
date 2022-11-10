@@ -10,6 +10,7 @@ public class Main {
         elementsAtOddPosition(arr);
         duplicateElementsOfArray(arr);
         sortElementsOfArray(arr);;
+        secondLargestElementOfArray(arr);
     }
     static void elementsOfArray(int[] arr){
         for(int x:arr){
@@ -103,5 +104,19 @@ public class Main {
         for(int x: arr){
             System.out.print(x+" ");
         }
+    }
+    static void secondLargestElementOfArray(int[] arr){
+        int fl=arr[0],sl=arr[0];
+        for(int i=1;i<arr.length;i++){
+            if(arr[i]>=fl){
+                sl=fl;
+                fl=arr[i];
+            }else{
+                if(arr[i]>=sl){
+                    sl=arr[i];
+                }
+            }
+        }
+        System.out.println(sl);
     }
 }
