@@ -1,8 +1,17 @@
 package LFP.Day2;
 
+import LFP.Day1.StringComparison;
+
 public class Main {
     public static void main(String[] args) {
-
+      boolean flag=  StringComparison.validInteger(args[0]);
+      boolean flag1=StringComparison.validInteger(args[1]);
+      if(flag&&flag1){
+          SpringSeason springSeason= new SpringSeason();
+          springSeason.setD(Integer.parseInt(args[0]));
+          springSeason.setM(Integer.parseInt(args[1]));
+          System.out.println( springSeason.dayOfMonthBetweenMarch20AndJune20());
+      }
     }
     static void numberInWords(int n){
         String s="";
